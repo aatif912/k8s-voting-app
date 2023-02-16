@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: postgres-deploy
   labels:
     name: postgres-deploy
     app: demo-voting-app
 spec:
   selector:
     matchLabels:
-      name: postgres-deploy
+      name: postgres-pod
       app: demo-voting-app
   template:
     metadata:
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres
+        image: postgres:12
         resources:
           limits:
             memory: "128Mi"
