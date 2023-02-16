@@ -46,4 +46,22 @@ Time to deploy
 
 `k create -f result-app-service.yaml`
 
+After all components are deployed chack status of all resources one using- 
+
+`k get all`
+
+![image](https://user-images.githubusercontent.com/13832737/219510878-66221152-4c43-4e95-a459-77ef2874ca03.png)
+
+Notice the external IP of sevices `voting-service` and `result-service` 
+
+![image](https://user-images.githubusercontent.com/13832737/219511026-b67ee1b3-51ac-43a2-bf62-34e2fa6e51b3.png)
+
+
+Browse on these external IPs and you get the content
+
+![image](https://user-images.githubusercontent.com/13832737/219511118-250cca4c-79d5-4699-822a-1a836c4c70d3.png)
+
+![image](https://user-images.githubusercontent.com/13832737/219511162-a74a713c-6d11-4a5d-af8d-069f35718aae.png)
+
+
 
