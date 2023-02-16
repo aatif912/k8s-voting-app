@@ -1,4 +1,4 @@
-setup your local env first. Reference - https://github.com/aatif912/setting-up-k8s-env/blob/main/README.md
+Setup your local env first. Reference - https://github.com/aatif912/setting-up-k8s-env/blob/main/README.md
 
 Create a cluster in Azure using portal:
 ![image](https://user-images.githubusercontent.com/13832737/219465379-4a9d4127-e496-4950-8ffe-8c1eb8f5d08b.png)
@@ -25,3 +25,25 @@ Some issue with the context, so we do a workaround for it, create an env var 'KU
 Now it works-
 
 ![image](https://user-images.githubusercontent.com/13832737/219497411-7f14a74a-1c84-436b-a4a4-1f83293c4935.png)
+
+Time to deploy
+
+`k create -f voting-app-deploy.yaml`
+
+`k create -f voting-app-service.yml`
+
+`k create -f redis-deploy.yaml`
+
+`k create -f redis-service.yaml`
+
+`k create -f postgres-deploy.yaml`
+
+`k create -f postgres-service.yaml`
+
+`k create -f worker-app-deploy.yaml`
+
+`k create -f result-app-deploy.yaml`
+
+`k create -f result-app-service.yaml`
+
+
